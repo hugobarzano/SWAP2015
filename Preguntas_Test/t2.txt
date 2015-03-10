@@ -1,0 +1,26 @@
+Pregunta 1: ¿Cual de los siguientes algoritmos no se usa en el balanceo de carga?
+
+a) Round-Robin
+b) Ponderación
+c) Euclides
+d) Tiempo de Respuesta
+
+Respuesta correcta: c
+
+Pregunta 2: Con el objetivo de conseguir una alta disponibilidad de la red, ¿A que nivel debe tener redundancia la red?
+
+a) Solo en la conexión a Internet
+b) Solo en Routers/cortafuegos/balanceadores
+c) Solo en Servidores
+d) Todas las anteriores 
+
+Respuesta correcta: d
+
+Pregunta 3: ¿Qué tipo de escalado o ampliación consiste en incrementar la RAM, la CPU y el disco de un servidor?
+
+a) Ampliación frontal
+b) Ampliación horizontal
+c) Ampliación abdominal
+d) Ampliación vertical
+
+Respuesta correcta: d

@@ -1,0 +1,17 @@
+Pregunta 1: Un sitio web mal planificado puede presentar problemas...
+
+a) con la arquitectura del sistema
+b) con la disponibilidad
+c) con la carga del sistema
+d) todas las anteriores
+
+Respuesta correcta: d
+
+Pregunta 2: Cuando un sitio web esta mal planificado y los fallos son irreparables, ¿cual es la mejor solución?
+
+a) Configurar varias máquinas, dedicando cada una a un servicio
+b) Reestructurar todo el sistema. 
+c) Tener una maquina replicada o cold spare server
+d) Comprar una segunda maquina
+
+Respuesta correcta: b
