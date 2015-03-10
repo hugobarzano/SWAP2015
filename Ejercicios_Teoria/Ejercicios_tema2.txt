@@ -1,0 +1,37 @@
+Ejercicio T2.1: Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).
+
+Estado inicial:
+web		85%
+Application	90%
+Database	99.9%
+DNS		98%
+Firewall	85%
+Switch		99%
+Data Center 	99.99%
+ISP		95%
+
+Disponibilidad del sistema: 79.10%
+
+Con una replica de cada subsistema(incluido centro de datos):
+web		97.75%
+Application	99%
+Database	99.9999%
+DNS		99.96%
+Firewall	97.75%
+Switch		99.99%
+Data Center 	99.999999%
+ISP		99.75%
+
+Disponibilidad del sistema: 94.31%
+
+Con dos replicas de cada subsistema:
+web		97.75% + (1-97.75%)*85%=99.6625%
+Application	99% + (1-99%)*90%=99.9%
+Database	99.9999% + (1-99.9999%)*99.9%=99.999999%
+DNS		99.96% + (1-99.96%)*98%=99.9992%
+Firewall	97.75% + (1-97.75%)*85%=99.6625%
+Switch		99.99% + (1-99.99%)*99%=99.9999%
+Data Center 	99.999999% + (1-99.999999%)*99.99%=99.99999999%
+ISP		99.75% + (1-99.75%)*95%=99.9875%
+
+Disponibilidad del sistema: 99.2135%
