@@ -1,0 +1,18 @@
+Pregunta 1: El Backbone o eje principal de enlace entre máquina para la red del sistema, se puede formar con:
+
+a) Un Switch
+b) Un router
+c) Un hub
+d) Cualquiera de las anteriores
+
+Respuesta correcta: d
+
+Pregunta 2: ¿Cual de los siguientes servicios no se ofrece por el front-rail?
+
+a) HTTP
+b) Bases de datos
+c) SMTP
+d) FTP
+
+Respuesta correcta: b
+ 
