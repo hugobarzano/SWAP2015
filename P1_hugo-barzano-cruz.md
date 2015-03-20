@@ -1,4 +1,4 @@
-# Práctica - 1
+# Práctica 1. Preparación de las herramientas
 
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
