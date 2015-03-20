@@ -1,8 +1,12 @@
-# Practica - 1
+# Práctica - 1
+
+- Hugo Bárzano Cruz
+- Francisco Javier Garrido Mellado
 
 **Resultado de ejecutar los comandos indicados**
 
 *apache2 -v*
+
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P1/apache2.png?raw=true)
 
 
