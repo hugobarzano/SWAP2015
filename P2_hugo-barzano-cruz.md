@@ -3,19 +3,19 @@
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
 
-**1-** Generar la clave ssh mediante el comando:
+**1-** *Generar la clave ssh mediante el comando:*
 
-	*ssh-keygen -t dsa*
+	ssh-keygen -t dsa
 
-**2-** Copiarla al servidor principal mediante el comando:
+**2-** *Copiarla al servidor principal mediante el comando:*
 
-	*ssh-copy-id -i .ssh/id_dsa.pub root@172.16.24.128*
+	ssh-copy-id -i .ssh/id_dsa.pub root@172.16.24.128
 
-	y efectivamente, tras esto, podemos conectarnos via ssh sin 		necesidad de introducir contraseña.
+	y efectivamente, tras esto, podemos conectarnos via ssh sin necesidad de introducir contraseña.
 
-**3-** Automatizar la tarea de clonar la informacion de nuestro  	sitio web:
+**3-** *Automatizar la tarea de clonar la informacion de nuestro sitio web:*
 
-       Editar el fichero */etc/crontab* y añadir la siguiente linea:
-**01 *   ***  root rsync -avz -e ssh root@172.16.24.128:/var/www/ /var/www/**
+       Para ello, editar el fichero /etc/crontab y añadir la siguiente linea:
+	**01 *   ***  root rsync -avz -e ssh root@172.16.24.128:/var/www/ /var/www/**
  
-	la cual ejecutará la herramienta rsync en el primer minuto 		de cada hora, de todos los dias de la semana, de todos los 		meses.
+	la cual ejecutará la herramienta rsync en el primer minuto de cada hora, de todos los dias de la semana, de todos los meses.
