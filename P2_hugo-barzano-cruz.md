@@ -1,4 +1,4 @@
-# PRACTICA 2: Clonar la información de un sitio web
+# PRACTICA 2. Clonar la información de un sitio web
 
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
