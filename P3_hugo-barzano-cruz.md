@@ -1,10 +1,12 @@
 # Práctica 3. Balanceo de carga
+
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
 
-Paso 1: Intalacion de ngid nx
-	Para realizar la instalcion del primer software propuesto 
-	para funcionar como balanceador de carga es necesaio 		importar la clave del repositorio 
+**1-** *Intalacion de *
+	Para realizar la instalcion del primer software propuesto para funcionar como
+	balanceador de carga es necesaio importar la clave del repositorio 
+
 		cd /tmp/
 		wget http://nginx.org/keys/nginx_signing.key
 		apt-key add /tmp/nginx_signing.key
