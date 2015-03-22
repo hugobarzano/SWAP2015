@@ -3,7 +3,7 @@
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
 
-**1-** *Intalacion de *
+**1-** *Intalacion de nginx*
 	Para realizar la instalcion del primer software propuesto para funcionar como
 	balanceador de carga es necesaio importar la clave del repositorio 
 
@@ -14,8 +14,10 @@
 
 	y tras esto, instalarlo mediante apt-get
 
-Paso 2: Configurar nginx
+**2-** *Configurar nginx*
 	Para realizar la configuracion de nginx como balanceador de 
 	carga, es necesario editar el archivo de configuración
 		/etc/nginx/conf.d/default.conf
-	y dejarlo tal y como esta en la captura de pantalla
+	y dejarlo tal y como se muestra en la siguiente captura:
+
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/nginx_default_conf.png?raw=true)
