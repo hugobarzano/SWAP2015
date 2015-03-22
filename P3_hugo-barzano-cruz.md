@@ -9,6 +9,7 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 ## Balanceo de carga con nginx 
 
 **1-** *Instalación de nginx*
+
 	Para realizar la instalcion del primer software propuesto para funcionar como
 	balanceador de carga es necesaio importar la clave del repositorio 
 
@@ -20,6 +21,7 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 	y tras esto, instalarlo mediante apt-get
 
 **2-** *Configurar nginx*
+
 	Para realizar la configuracion de nginx como balanceador de 
 	carga, es necesario editar el archivo de configuración
 		/etc/nginx/conf.d/default.conf
@@ -33,6 +35,7 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 		sudo service nginx restart
 
 **3-** *Comprobar que el software funciona*
+
 	Mediante el comando curl probamos que nginx esta balanceando la carga correctamente:
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/nginx_balancea.png?raw=true)
@@ -54,17 +57,20 @@ Si queremos volver a balancear con nginx:
 
    
 **1-** *Instalación de haproxy*
+
 	Mediante el comando:
 
 		sudo apt-get install haproxy
 
 **2-** *Configuración de haproxy*
+
 	Para configurar haproxy como balanceador de carga es necesario editar el fichero de configuración /etc/haproxy/haproxy.cfg
 	dejandolo tal y como se muestra en la siguiente captura:
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/haproxy_conf.png?raw=true)
 
 **3-** *Comprobar que el software funciona*
+
 	Mediante el comando curl probamos que haproxy esta balanceando la carga correctamente
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/ha_proxy_balancea.png?raw=true)
