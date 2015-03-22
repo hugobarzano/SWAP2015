@@ -19,7 +19,7 @@
 
        Para ello, editar el fichero /etc/crontab y añadir la siguiente linea:
 
-	**01 *   ***  root rsync -avz -e ssh root@172.16.24.128:/var/www/ /var/www/**
+	*01 *   ***  root rsync -avz -e ssh root@172.16.24.128:/var/www/ /var/www/*
  
 	La cual ejecutará la herramienta rsync en el primer minuto de cada hora, de todos los dias de la semana,
 	de todos los meses. El archivo /etc/crontab se quedará con un aspecto tal que así:
