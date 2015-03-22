@@ -59,7 +59,7 @@ Si queremos volver a balancear con nginx:
 	Para configurar haproxy como balanceador de carga es necesario editar el fichero de configuración /etc/haproxy/haproxy.cfg
 	dejandolo tal y como se muestra en la siguiente captura:
 
-![imagen] ( )
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/haproxy_conf.png?raw=true)
 
 
 
