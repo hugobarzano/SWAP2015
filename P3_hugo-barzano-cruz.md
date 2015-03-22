@@ -32,12 +32,15 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 			
 		sudo service nginx restart
 
-**3-** *Comprobar balanceo*
+**3-** *Comprobar que el software funciona*
+	Mediante el comando curl probamos que nginx esta balanceando la carga correctamente:
+
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/nginx_balancea.png?raw=true)
 
 ## Balanceo de carga con haproxy
 
 **Consideraciones Iniciales:** Podemos utilizar una cuarta maquina virtual para realizar la
-instalación de este software pero en el caso de que queramos hacerla sobre la mauina 3, donde
+instalación de este software pero en el caso de que queramos hacerla sobre la maquina 3, donde
 acabamos de instalar y configurar nginx como balanceador, debemos parar dicho servicio e iniciar el
 nuevo. Podemos hacerlo con: 
 
@@ -60,6 +63,11 @@ Si queremos volver a balancear con nginx:
 	dejandolo tal y como se muestra en la siguiente captura:
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/haproxy_conf.png?raw=true)
+
+**3-** *Comprobar que el software funciona*
+	Mediante el comando curl probamos que haproxy esta balanceando la carga correctamente
+
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/ha_proxy_balancea.png?raw=true)
 
 
 
