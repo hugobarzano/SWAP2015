@@ -12,7 +12,8 @@
 	ssh-copy-id -i .ssh/id_dsa.pub root@172.16.24.128
 
 	y efectivamente, tras esto, podemos conectarnos via ssh sin necesidad de introducir contraseña.
-	![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P2/ssh_copy.png?raw=true)
+
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P2/ssh_copy.png?raw=true)
 
 **3-** *Automatizar la tarea de clonar la informacion de nuestro sitio web:*
 
@@ -22,4 +23,5 @@
  
 	La cual ejecutará la herramienta rsync en el primer minuto de cada hora, de todos los dias de la semana,
 	de todos los meses. El archivo /etc/crontab se quedará con un aspecto tal que así:
-	![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P2/crontab.png?raw=true)
+
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P2/crontab.png?raw=true)
