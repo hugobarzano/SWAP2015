@@ -36,7 +36,9 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 
 **3-** *Comprobar que el software funciona*
 
-	Mediante el comando curl probamos que nginx esta balanceando la carga correctamente:
+	Mediante el comando curl probamos que nginx esta balanceando la carga correctamente. Es aconsejable
+	comentar la tarea cron que configuramos en la practica 2 ya que si no, ambos servidores (principal y respaldo)
+	tendrian el mismo index.html y no sabriamos distingir si el balanceo se esta realizando correctamente o no.
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/nginx_balancea.png?raw=true)
 
