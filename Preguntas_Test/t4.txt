@@ -1,0 +1,18 @@
+Pregunta 1: El balanceo de carga consiste en interceptar el tráfico para redirigirlo a varios servidores. Indica cual de las siguientes es una tecnología similar:
+
+a) Balanceo de carga en cortafuegos
+b) Balanceo de carga global
+c) Clustering
+d) Todas las anteriores
+
+Respuesta correcta: d
+
+Pregunta 2: Con respecto al Balanceo de carga global, supone una mejora en:
+
+a) Alta Disponibilidad y Tiempo de Respuesta
+b) Tolerancia a Fallos
+c) Redireccionamineto del Tráfico
+d) Disminuir Sobrecarga
+
+Respuesta correcta: a
+ 
