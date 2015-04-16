@@ -58,15 +58,15 @@ El software que he utilizado para medir el rendimiento del servidor web ha sido:
 
 **1- Apache Benchmark** 
 
-![imagen] (https://github.com/hugobarzano/swap2015/blob/master/salidas_p4/maquina_principal/ab.png?raw=true)
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/salidas_p4/balanceador_haproxy/ab.png?raw=true)
 
 **2- Httperf** 
 
-![imagen] (https://github.com/hugobarzano/swap2015/blob/master/salidas_p4/maquina_principal/ab.png?raw=true)
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/salidas_p4/balanceador_haproxy/httperf.png?raw=true)
 
 **3- Openload**
 
-![imagen] (https://github.com/hugobarzano/swap2015/blob/master/salidas_p4/maquina_principal/ab.png?raw=true)
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/salidas_p4/balanceador_haproxy/openload.png?raw=true)
 
 
 
