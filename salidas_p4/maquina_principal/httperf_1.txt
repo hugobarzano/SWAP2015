@@ -1,0 +1,23 @@
+httperf --timeout=5 --client=0/1 --server=172.16.24.128 --port=80 --uri=/index.php --rate=150 --send-buffer=4096 --recv-buffer=16384 --num-conns=27000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 27000 requests 23768 replies 23489 test-duration 182.606 s
+
+Connection rate: 147.9 conn/s (6.8 ms/conn, <=704 concurrent connections)
+Connection time [ms]: min 53.4 avg 2295.7 max 7927.4 median 1884.5 stddev 1142.2
+Connection time [ms]: connect 472.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 130.2 req/s (7.7 ms/req)
+Request size [B]: 75.0
+
+Reply rate [replies/s]: min 83.2 avg 128.7 max 149.6 stddev 22.3 (36 samples)
+Reply time [ms]: response 1833.9 transfer 0.0
+Reply size [B]: header 194.0 content 28.0 footer 0.0 (total 222.0)
+Reply status: 1xx=0 2xx=23489 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.16 system 180.79 (user 0.6% system 99.0% total 99.6%)
+Net I/O: 37.5 KB/s (0.3*10^6 bps)
+
+Errors: total 3511 client-timo 3511 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0

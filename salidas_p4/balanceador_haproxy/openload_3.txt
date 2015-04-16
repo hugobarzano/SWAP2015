@@ -1,0 +1,5 @@
+Total TPS: 229.85
+Avg. Response time:  0.432 sec.
+Max Response time:   1.790 sec
+Total Requests:   29445
+Total Errors:         0
