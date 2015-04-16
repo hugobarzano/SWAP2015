@@ -4,6 +4,7 @@
 - Francisco Javier Garrido Mellado
 
 **Consideraciones Iniciales:** 
+
 **Ip-servidor principal (máquina individual): 172.16.24.128**
 
 **Ip-Balanceador de carga (granja web): 172.16.24.130**
@@ -26,17 +27,9 @@ El software que he utilizado para medir el rendimiento del servidor web ha sido:
 ## Rendimiento servidor web principal de manera individual 
  
 
-**1-** *Instalación de nginx*
+**1- Apache Benchmark** 
 
-	Para realizar la instalcion del primer software propuesto para funcionar como
-	balanceador de carga es necesaio importar la clave del repositorio 
-
-		cd /tmp/
-		wget http://nginx.org/keys/nginx_signing.key
-		apt-key add /tmp/nginx_signing.key
-		rm -f /tmp/nginx_signing.key
-
-	y tras esto, instalarlo mediante apt-get
+	
 
 **2-** *Configurar nginx*
 
