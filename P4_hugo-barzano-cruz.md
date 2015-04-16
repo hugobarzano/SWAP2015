@@ -3,22 +3,24 @@
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
 
-**Consideraciones Iniciales:** El software que he utilizado para medir el rendimiento del servidor web ha sido:
-
+**Consideraciones Iniciales:** 
 **Ip-servidor principal (máquina individual): 172.16.24.128**
+
 **Ip-Balanceador de carga (granja web): 172.16.24.130**
+
+El software que he utilizado para medir el rendimiento del servidor web ha sido:
 
 **1- Apache Benchmark** Desde la maquina anfitrion mediante el comando:
 
-	*ab -n 100000 -c 100 http://172.16.24.130/*  
+	ab -n 100000 -c 100 http://172.16.24.130/
 
 **2- Httperf** Desde la máquina anfitrión mediante el comando:
 
-	*httperf --server 172.16.24.130 --port 80 --uri /index.php --rate 150 --num-conn 27000 --num-call 1 --timeout 5*
+	httperf --server 172.16.24.130 --port 80 --uri /index.php --rate 150 --num-conn 27000 --num-call 1 --timeout 5
 
 **3- Openload** Desde la máquina anfitrión mediante el comando:
 
-	*openload 172.16.24.130 100*
+	openload 172.16.24.130 100
 
 
 ## Rendimiento servidor web principal de manera individual 
