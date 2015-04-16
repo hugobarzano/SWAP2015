@@ -1,17 +1,17 @@
-# Práctica 3. Balanceo de carga
+#Práctica 3. Balanceo de carga
 
 - Hugo Bárzano Cruz
 - Francisco Javier Garrido Mellado
 
 **Consideraciones Iniciales:** El software necesario para el balanceo de carga, ha de ser instalado
-en una tercera maquina virtual la cual no tenga apache ya que esto podria causar conflicto de puertos. 
+en una tercera maquina virtual la cual no tenga apache ya que esto podría causar conflicto de puertos. 
 
 ## Balanceo de carga con nginx 
 
 **1-** *Instalación de nginx*
 
-	Para realizar la instalcion del primer software propuesto para funcionar como
-	balanceador de carga es necesaio importar la clave del repositorio 
+	Para realizar la instalación del primer software propuesto para funcionar como
+	balanceador de carga es necesario importar la clave del repositorio 
 
 		cd /tmp/
 		wget http://nginx.org/keys/nginx_signing.key
@@ -22,14 +22,14 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 
 **2-** *Configurar nginx*
 
-	Para realizar la configuracion de nginx como balanceador de 
+	Para realizar la configuración de nginx como balanceador de 
 	carga, es necesario editar el archivo de configuración
 		/etc/nginx/conf.d/default.conf
 	y dejarlo tal y como se muestra en la siguiente captura:
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/nginx_default_conf.png?raw=true)
 
-	es importante reiniciar el servicio despues de realizar cualquier modificacion en la configuración
+	es importante reiniciar el servicio después de realizar cualquier modificación en la configuración
 	ya que si no los cambios no se realizarán. Utilizar:  
 			
 		sudo service nginx restart
@@ -38,7 +38,7 @@ en una tercera maquina virtual la cual no tenga apache ya que esto podria causar
 
 	Mediante el comando curl probamos que nginx esta balanceando la carga correctamente. Es aconsejable
 	comentar la tarea cron que configuramos en la practica 2 ya que si no, ambos servidores (principal y respaldo)
-	tendrian el mismo index.html y no sabriamos distingir si el balanceo se esta realizando correctamente o no.
+	tendrian el mismo index.html y no sabríamos distinguir si el balanceo se esta realizando correctamente o no.
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/nginx_balancea.png?raw=true)
 
@@ -67,7 +67,7 @@ Si queremos volver a balancear con nginx:
 **2-** *Configuración de haproxy*
 
 	Para configurar haproxy como balanceador de carga es necesario editar el fichero de configuración /etc/haproxy/haproxy.cfg
-	dejandolo tal y como se muestra en la siguiente captura:
+	dejándolo tal y como se muestra en la siguiente captura:
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/haproxy_conf.png?raw=true)
 
@@ -76,10 +76,6 @@ Si queremos volver a balancear con nginx:
 	Mediante el comando curl probamos que haproxy esta balanceando la carga correctamente
 
 ![imagen] (https://github.com/hugobarzano/swap2015/blob/master/imagenes/P3/ha_proxy_balancea.png?raw=true)
-
-
-
-
 
 
 
