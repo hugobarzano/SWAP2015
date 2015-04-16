@@ -11,7 +11,7 @@
 
 El software que he utilizado para medir el rendimiento del servidor web ha sido:
 
-**1- Apache Benchmark** Desde la maquina anfitrion mediante el comando:
+**1- Apache Benchmark** Desde la máquina anfitrión mediante el comando:
 
 	ab -n 100000 -c 100 http://172.16.24.130/
 
