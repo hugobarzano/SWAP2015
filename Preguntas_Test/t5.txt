@@ -1,0 +1,26 @@
+Pregunta 1: ¿Cual de las siguientes opciones no es una métrica para la medida de prestaciones de un servidor?
+a) Transacciones por segundo
+b) Horas de servicio ininterrumpido
+c) número de conexiones concurrentes
+d) rendimiento (en bits por segundo)
+
+Respuesta correcta: b
+
+Pregunta 2: Las pruebas preliminares que se realizan sobre el sistema para comprobar que esta listo para ser testeado reciben el nombre de:
+
+a) Carga o Load
+b) Capacidad o Capacity
+c) Humo o Smoke
+d) Sobrecarga u Overload
+
+Respuesta correcta: c
+
+Pregunta 3: Las pruebas pruebas que se realizan para analizar el efecto de aplicar de forma continuada una carga por encima de la capacidad del sistema reciben el nombre de:
+
+a) Estabilidad o Stability
+b) Capacidad o Capacity
+c) Carga o Load
+d) Estrés o Stress
+
+Respuesta correcta: d
+ 
