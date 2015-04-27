@@ -66,8 +66,50 @@ Podemos observar como la base de datos ha sido replicada correctamente en el ser
 	Paso 4: Almacenar el registro binario
 		log_bin = /var/log/mysql/bin.log
 	Paso 5: Guardar el documento y reiniciar servicio. Podemos 		comprobar que la ocnfiguración es correcta, ya que no se 		han producido errores.
+
 	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/configuracion_maestro.png?raw=true)
+
+	**Servidor Respaldo**
+	Paso 1: Establecer identificado del servicio
+		server-id=1
+	Paso 2: Establecer datos master(solo en mysql inferior 5.5)
+		Master-host= 192.168.45.140
+		Master-user=usuariobd
+		Master-password=123456
+	En mi caso no he tenido que realizar este paso. Reinicio el 
+	servicio y compruebo que no se han producido errores:
 	
+	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/configuracion_esclavo.png?raw=true)
+
+	**Creación de usuario para replicación**
+	Nos situamos en la maquina principal y creamos un usuario 
+	com permisos de replicación.
+	Paso 1: CREATE USER esclavo IDENTIFIED BY 'esclavo';
+	Paso 2: GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%' IDENTIFIED BY 'esclavo';
+	Paso 3: FLUSH PRIVILEGES;
+	Paso 4: FLUSH TABLES;
+	Paso 5: FLUSH TABLES WITH READ LOCK; 
+	Paso 6: Obtener los datos de la BD a replicar SHOW MASTER STATUS;
+	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/master_status.png?raw=true)
+
+	Paso 7: En la maquina esclava, le damos los datos del maestro:
+	CHANGE MASTER TO MASTER_HOST='172.16.24.128',
+	MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',
+	MASTER_LOG_FILE='mysql-bin.00001', MASTER_LOG_POS=501,
+	MASTER_PORT=3306;
+
+	Paso 8: Arrancar el esclavo
+	START SLAVE;
+	Paso 9: Desbloquear las tablas del maestro
+	UNLOCK TABLES;
+	Paso 10: Comprobar que funciona
+	SHOW SLAVE STATUS\G 
+	![imagen] (https://github.com/hugobarzano/swap2015/blob/d6440572095f8615951bf5090992cca807d2783c/imagenes/p5/slave_status.png?raw=true)
+	Copia las nuevas inserciones:
+	![imagen](https://github.com/hugobarzano/swap2015/blob/d6440572095f8615951bf5090992cca807d2783c/imagenes/p5/salida_final.png?raw=true)
+
+
+
 
 
 
