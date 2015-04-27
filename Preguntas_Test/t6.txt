@@ -1,0 +1,19 @@
+Pregunta 1: ¿Cual de las siguientes opciones es una ventaja de usar un cortafuegos?
+
+a) Evita consumo excesivo de recursos
+b) Oculta a los servidores finales de otras redes
+c) Protege a los servidores de otras redes
+d) Todas las anteriores
+
+Respuesta correcta: d
+
+Pregunta 2: El balanceador de carga puede evitar ataques del tipo:
+
+a) TCP SYN
+b) Denegación de servicio
+c) Ping of death
+d) Todos los anteriores
+
+Respuesta correcta: d
+
+ 
