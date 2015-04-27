@@ -27,6 +27,48 @@ Ahora vamos a darle contenido a la tabla datos que acabamos de crear:
 Consultamos que la base de datos ya tiene conenido:
 	*show tables;*
 	*select * from datos;*
+
+
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/bd.png?raw=true)
+
+## Replicar la base de datos con mysqldump (manualmente)
+	**Servidor Principal -> copia de seguridad**
+	Paso 1: Bloquear acceso a la BD 
+		mysql -u root -p
+		FLUSH TABLES WITH READ LOCK;
+		quit
+	Paso 2: Utilizar mysqldump para guardar datos
+		mysqldunmp contactos -u root -p > /root/copiaBD.sql
+	Paso 3: Desbloquear las tablas
+		mysql -u root -p
+		UNLOCK TABLES;
+		quit
+	**Servidor Respaldo -> Restaurar copia de seguridad**
+	Paso 1: Copiar el archivo copiaBD.sql del servidor principal
+		scp root@172.16.24.128:/root/copiaBD.sql /root/
+	Paso 2: Crear la base de datos en el servidor de respaldo:
+		mysql -u root -p
+		create database BDrespaldo;
+		quit
+	Paso 3:Restaurar  los datos contenidos en la BD del 		servidor principal
+		mysql -u root -p BDrespaldo < /root/copiaBD.sql
+Podemos observar como la base de datos ha sido replicada correctamente en el servidor de respaldo:  
+![imagen](https://raw.githubusercontent.com/hugobarzano/swap2015/87612ebda74d5d5a1014422d0f59b0dabe35a233/imagenes/p5/bd_respaldo.png)
+
+## Replicar la base de datos mediante configuración maestro-esclavo
+	**Servidor Principal**
+	Paso 1: Comentar el parametro bind-address
+		#bind-address 127.0.0.1
+	Paso 2: Almacenar el log de errores
+		log_error = /var/log/mysql/error.log
+	Paso 3: Establecer identificador del servicio
+		server-id = 1
+	Paso 4: Almacenar el registro binario
+		log_bin = /var/log/mysql/bin.log
+	Paso 5: Guardar el documento y reiniciar servicio. Podemos 		comprobar que la ocnfiguración es correcta, ya que no se 		han producido errores.
+	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/configuracion_maestro.png?raw=true)
+	
+
+
 
 
