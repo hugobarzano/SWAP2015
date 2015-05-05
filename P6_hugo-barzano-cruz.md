@@ -14,21 +14,23 @@
 	sudo apt-get install mdadm
 **Paso 2:** Informacion de los discos
 	sudo fdisk -l
-![imagen] (fdisk)
+![imagen] (https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/fdisk.png?raw=true)
 sda: disco principal
 sdb y sdc disco añadidos para el RAID
 
 **Paso 3:** Crear el RAID 1
 	sudo mdadm -C /dev/md0 --level=raid1 --raid-devices=2 /dev/sdb /dev/sdc
-![imagen](crear_raiz)
+![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/crear_raid.png?raw=true)
 **paso 4:** Dar formato al dispositivo, crear el directorio que vamos a usar y motar la unidad RAID.
 	sudo mkfs /dev/md0
 	sudo mkdir /datos
 	sudo mount /dev/md0 /datos
 **Paso 5:** Comprobar el estado del RAID
 	sudo mdadm --detail /dev/md0
-![imagen](detail)
-**Nota:** Se considera interesante automatizar el proceso de montar el dispositivo RAIZ para que se realice al arrancar el sistema. Para ello es necesario editar el archivo /etc/fstab y añadir 
+![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/details.png?raw=true)
+
+**Nota:** Se considera interesante automatizar el proceso de montar el dispositivo RAIZ para que se realice al arrancar el sistema. Para ello es necesario editar el archivo /etc/fstab y añadir:
+![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/automatizar_montage.png?raw=true) 
 	
 
 ## Prueba RAID 1
