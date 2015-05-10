@@ -52,7 +52,7 @@ Consultamos que la base de datos ya tiene conenido:
 		quit
 	Paso 3:Restaurar  los datos contenidos en la BD del 		servidor principal
 		mysql -u root -p BDrespaldo < /root/copiaBD.sql
-Podemos observar como la base de datos ha sido replicada correctamente en el servidor de respaldo:  
+Podemos observar como la base de datos ha sido replicada correctamente en el servidor de respaldo:
 ![imagen](https://raw.githubusercontent.com/hugobarzano/swap2015/87612ebda74d5d5a1014422d0f59b0dabe35a233/imagenes/p5/bd_respaldo.png)
 
 ## Replicar la base de datos mediante configuración maestro-esclavo
@@ -65,7 +65,7 @@ Podemos observar como la base de datos ha sido replicada correctamente en el ser
 		server-id = 1
 	Paso 4: Almacenar el registro binario
 		log_bin = /var/log/mysql/bin.log
-	Paso 5: Guardar el documento y reiniciar servicio. Podemos 		comprobar que la ocnfiguración es correcta, ya que no se 		han producido errores.
+	Paso 5: Guardar el documento y reiniciar servicio. Podemos 		comprobar que la configuración es correcta, ya que no se 		han producido errores.
 
 	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/configuracion_maestro.png?raw=true)
 

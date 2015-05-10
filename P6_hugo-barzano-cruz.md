@@ -30,6 +30,7 @@ sdb y sdc disco añadidos para el RAID
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/details.png?raw=true)
 
 **Nota:** Se considera interesante automatizar el proceso de montar el dispositivo RAIZ para que se realice al arrancar el sistema. Para ello es necesario editar el archivo /etc/fstab y añadir:
+
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/automatizar_montage.png?raw=true) 
 	
 
