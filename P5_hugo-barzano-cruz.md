@@ -65,7 +65,7 @@ Podemos observar como la base de datos ha sido replicada correctamente en el ser
 		server-id = 1
 	Paso 4: Almacenar el registro binario
 		log_bin = /var/log/mysql/bin.log
-	Paso 5: Guardar el documento y reiniciar servicio. Podemos 		comprobar que la configuración es correcta, ya que no se 		han producido errores.
+	Paso 5: Guardar el documento y reiniciar servicio. Podemos comprobar que la configuración es correcta, ya que no se 		han producido errores.
 
 	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/configuracion_maestro.png?raw=true)
 
