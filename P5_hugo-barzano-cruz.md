@@ -67,7 +67,7 @@ Podemos observar como la base de datos ha sido replicada correctamente en el ser
 		log_bin = /var/log/mysql/bin.log
 	Paso 5: Guardar el documento y reiniciar servicio. Podemos comprobar que la configuración es correcta, ya que no se 		han producido errores.
 
-	![imagen](https://github.com/hugobarzano/swap2015/blob/master/imagenes/p5/configuracion_maestro.png?raw=true)
+	![imagen](https://raw.githubusercontent.com/hugobarzano/swap2015/87612ebda74d5d5a1014422d0f59b0dabe35a233/imagenes/p5/configuracion_maestro.png)
 
 	**Servidor Respaldo**
 	Paso 1: Establecer identificado del servicio
