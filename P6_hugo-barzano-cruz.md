@@ -41,27 +41,37 @@ sdb y sdc disco añadidos para el RAID
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/details.png?raw=true)
 
 **Nota:** Se considera interesante automatizar el proceso de montar el dispositivo RAID para que se realice al arrancar el sistema. Para ello es necesario editar el archivo /etc/fstab y añadir:
-UUID=******* /datos ext4 defaults 0 0
+
+	UUID=******* /datos ext4 defaults 0 0
 donde ******* es la id del RAID obtenido mediante:
+
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/id.png?raw=true)
+
 y dejando el archivo tal que así:
-![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/automatizar_montage.png?raw=true) 
+
+![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/automatizar_montage.png?raw=true)
+ 
 Tras reiniciar, podemos comprobar que el RAID esta funcinando correctamente. Ha pasado de md0 a md127.
+
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/reiniciar.png?raw=true)
 	
 
 ## Prueba RAID 1
 
-**Paso 1:** Me conecto mediante ssh a la maquina virtual y ejecuto el monitor watch -n2 cat /proc/mdstat
+**Paso 1:** Conectarse mediante ssh a la maquina virtual y ejecutar el monitor
+	watch -n2 cat /proc/mdstat
 
-**Paso 2:**  Simular un fallo den disco mediante el comando 
+**Paso 2:** Simular un fallo de disco mediante el comando 
 	mdadm --manage --set-faulty /dev/md127 /dev/sdb
+
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/raid1_1.png?raw=true)
 **Paso 3:** Eliminar el disco duro con el que hemos simulado el fallo mediante el comando:
 	mdadm /dev/md127 -r /dev/sdb
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/raid1_2.png?raw=true)
+
 **Paso 4:** Añadir el disco duro que acabamos de eliminar mediante el comando mdadm /dev/md127 -a /dev/sbd 
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/raid1_3.png?raw=true)
+
 **Paso 5:** Comprobamos que todo vuelve a la normalidad
 ![imagen](https://github.com/hugobarzano/swap2015/blob/master/capturas_p6/raid1_4.png?raw=true)
     
