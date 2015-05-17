@@ -1,0 +1,52 @@
+Pregunta 1: ¿Qué método de almacenamiento o nivel de RAID presenta un conjunto de discos en espejo?
+
+a) RAID 0
+b) RAID 1
+c) RAID 2
+d) RAID 5
+
+Respuesta correcta: b
+
+Pregunta 2: Qué método de almacenamiento o nivel de RAID permite corrección de errores (código hamming)?
+
+a) RAID 0
+b) RAID 1
+c) RAID 2
+d) RAID 5
+
+Respuesta correcta: c
+
+Pregunta 3: ¿Qué método de almacenamiento o nivel de RAID divide los datos a nivel de bloques y ademas necesita de 3 discos como mínimo para ser implementado?
+
+a) RAID 0
+b) RAID 1
+c) RAID 2
+d) RAID 5
+
+Respuesta correcta: d
+
+
+Pregunta 4: ¿Qué método de almacenamiento o nivel de RAID suele utilizarse en bases de datos de altas prestaciones?
+
+a) RAID 0
+b) RAID 1
+c) RAID 5
+d) RAID 10
+
+Respuesta correcta: d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
