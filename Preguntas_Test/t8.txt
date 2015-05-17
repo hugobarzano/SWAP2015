@@ -1,0 +1,27 @@
+Pregunta 1: En relacción con los elementos de una granja web, ¿Cual de los siguientes es utilizado para almacenamiento?
+
+a) Arrays de almacenamiento compartido: SSA
+b) Área de almacenamiento en red: SAN
+c) Almacenamiento conectado a la red: NAS
+d) Todas las anteriores
+
+Respuesta correcta: d
+
+Pregunta 2: Para estimar la necesidad de ancho de banda que va a tener nuestro servidor, hay que tener en cuenta:
+
+a) El número de clientes que se conectará al servidor por segundo
+b) La cantidad de bytes que el cliente envia al servidor y la cantidad que el servidor le envia al cliente(petición-respuesta)
+c) El porcentaje de ancho de banda que se reserva para el servidor
+d) Todos los anteriores
+
+Respuesta correcta: d
+
+Pregunta 1: ¿Cual del siguiente sotfware para servidores es utilizado para monitorización?
+
+a) JMeter
+b) OpenSTA
+c) Apache Benchmark
+d) Todos los anteriores
+
+Respuesta correcta: d
+ 
